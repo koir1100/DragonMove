@@ -2,6 +2,7 @@
 //  GameOverLayer.m
 //
 //  Created by Sander Vispoel on 5/4/13.
+//  Revised by Yonggu Choi on 16/6/13.
 //  Copyright 2013 __MyCompanyName__. All rights reserved.
 //
 

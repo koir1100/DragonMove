@@ -2,6 +2,7 @@
 //  GameScene.m
 //
 //  Created by Sander Vispoel on 4/8/13.
+//  Revised by Yonggu Choi on 16/6/13.
 //
 //
 

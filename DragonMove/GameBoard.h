@@ -1,6 +1,6 @@
 //
 //  Created by Sander Vispoel on 4/8/13.
-//  Revised by Yonggu Choi on 16/6/13.
+//  Revised by Yonggu Choi on 6/16/13.
 //
 
 #import "cocos2d.h"

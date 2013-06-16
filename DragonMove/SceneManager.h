@@ -2,7 +2,7 @@
 //  SceneManager.h
 //  Cocos2dGame Template
 //
-//  Created by ivis01 on 13. 2. 1..
+//  Created by ivis01(University Lab) on 13. 2. 1..
 //
 //
 

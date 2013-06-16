@@ -7,6 +7,7 @@
 //
 
 #import "SceneManager.h"
+#import "SimpleAudioEngine.h"
 
 // Scene간 Transtion에 경과되는 디폴트 시간
 #define TRANSITION_DURATION (1.0f)
@@ -83,6 +84,11 @@ Class nextTransition()
 // 메뉴 화면으로 이동
 {
     CCLayer *layer = [MenuLayer node];
+    if( ![[SimpleAudioEngine sharedEngine] isBackgroundMusicPlaying])
+    {
+        SimpleAudioEngine *sound = [SimpleAudioEngine sharedEngine];
+        [sound playBackgroundMusic:@"bgsound.mp3" loop:YES];
+    }
     [SceneManager go:layer withTransition:@"FadeWhiteTransition" ofDelay:.2f];
 }
 
@@ -90,6 +96,11 @@ Class nextTransition()
 // 게임 화면으로 이동
 {
     CCLayer *layer = [GameScene node];
+    if( [[SimpleAudioEngine sharedEngine] isBackgroundMusicPlaying])
+    {
+        SimpleAudioEngine *sound = [SimpleAudioEngine sharedEngine];
+        [sound playBackgroundMusic:@"bgsound1.mp3" loop:YES];
+    }
     [SceneManager go:layer withTransition:@"FadeBlackTransition" ofDelay:.2f];
 }
 

@@ -32,7 +32,7 @@
 	
 	if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone )
     {
-		background = [CCSprite spriteWithFile:@"bg_open.png"];
+		background = [CCSprite spriteWithFile:@"bg_start.png"];
 	}
     else
 		background = [CCSprite spriteWithFile:@"Default-Landscape~ipad.png"];

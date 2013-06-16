@@ -37,7 +37,7 @@
         
         CCMenuItem *item4 = [CCMenuItemImage itemWithNormalImage:@"btn_intro.png" selectedImage:@"btn_intro_s.png" target:self selector:@selector(goIntroScene:)];
         
-        item1.tag = 1440; // tag은 유일해야 한다!!
+        item1.tag = 1440;
         item2.tag = 1441;
         item3.tag = 1442;
         item4.tag = 1443;

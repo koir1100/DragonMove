@@ -11,20 +11,11 @@
 
 @implementation AppController
 @synthesize window=window_, navController=navController_, director=director_;
-@synthesize gameScore, gameResult;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
 	window_ = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
-    // 0으로 초기화
-    self.gameScore = 0;
-    // NSLog(@"appdelegate의 게임 점수 = %i", self.gameScore);
-
-    self.gameResult = NO;
-    // 게임 결과는 NO로 초기화
-    
+   
 	// Create an CCGLView with a RGB565 color buffer, and a depth buffer of 0-bits
 	CCGLView *glView = [CCGLView viewWithFrame:[window_ bounds]
 								   pixelFormat:kEAGLColorFormatRGB565	//kEAGLColorFormatRGBA8
@@ -39,7 +30,7 @@
 	director_.wantsFullScreenLayout = YES;
 
 	// Display FSP and SPF
-	[director_ setDisplayStats:YES];
+	[director_ setDisplayStats:NO];
 
 	// set FPS at 60
 	[director_ setAnimationInterval:1.0/60];

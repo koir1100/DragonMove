@@ -1,6 +1,5 @@
 //
 //  Snake.m
-//  Snake2
 //
 //  Created by Sander Vispoel on 4/8/13.
 //

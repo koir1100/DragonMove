@@ -1,13 +1,11 @@
 //
 //  GameScene.m
-//  Snake2
 //
 //  Created by Sander Vispoel on 4/8/13.
 //
 //
 
 #import "cocos2d.h"
-
 #import "GameScene.h"
 #import "InterfaceLayer.h"
 #import "Background.h"
@@ -43,7 +41,8 @@
 
 -(id)init
 {
-    if((self=[super init])) {
+    if((self=[super init]))
+    {
         
         // add background
         _background = [Background node];

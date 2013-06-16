@@ -26,14 +26,17 @@
     {
         CGSize size = [[CCDirector sharedDirector] winSize];
 		CCSprite *bgSprite = [CCSprite spriteWithFile:@"bg_info.png"];
+        CCSprite *info_content = [CCSprite spriteWithFile:@"bg_info_content.png"];
 		[bgSprite setAnchorPoint:CGPointZero];
 		[bgSprite setPosition:CGPointZero];
+        info_content.position = ccp(size.width/2, size.height/2);
 		[self addChild:bgSprite z:0 tag:3];
+        [self addChild:info_content z:1];
         // infoLayer에 필요한 이미지 삽입
         
 		CCMenuItem *closeMenuItem = [CCMenuItemImage itemWithNormalImage:@"btn_b1.png" selectedImage:@"btn_b2.png" target:self selector:@selector(closeMenuCallback:)];
 		CCMenu *menu = [CCMenu menuWithItems:closeMenuItem, nil];
-		menu.position = ccp(size.width*4/5, size.height*1/15);
+		menu.position = ccp(size.width*8/9, size.height*8/9);
         [menu alignItemsVertically];
 		[self addChild:menu z:3 tag:10];
         // 돌아가기 버튼

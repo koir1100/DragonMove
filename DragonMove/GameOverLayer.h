@@ -1,8 +1,8 @@
 //
 //  GameOverLayer.h
-//  Snake2
 //
 //  Created by Sander Vispoel on 5/4/13.
+//  Reviesed by Yonggu Choi on 16/6/13.
 //  Copyright 2013 __MyCompanyName__. All rights reserved.
 //
 
@@ -13,7 +13,7 @@
 @class InterfaceLayer;
 
 @interface GameOverLayer : CCLayer {
-    
+    CCSprite *character;
 }
 
 +(CCScene *)sceneGameOver:(InterfaceLayer *)interface;
